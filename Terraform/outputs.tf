@@ -13,7 +13,7 @@ output "innstance_public_ip" {
   description = "Public IP address of the Flask app EC2 instance"
 }
 
-output "instance_public_id" {
+output "instance_public_ip" {
   value = aws_instance.flask_app_instance.id
   description = "ID of the Flask app EC2 instance"
 }
