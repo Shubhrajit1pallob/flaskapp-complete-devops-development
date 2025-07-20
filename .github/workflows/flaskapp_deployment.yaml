@@ -14,6 +14,8 @@ env:
 jobs:
     deploy-infra:
         runs-on: ubuntu-latest
+        outputs:
+            instance_ip: ${{ steps.instance_ip.outputs.ip }}
         steps:
             - name: Checkout code
               uses: actions/checkout@v2
@@ -22,7 +24,7 @@ jobs:
               uses: hashicorp/setup-terraform@v1
               with:
                 terraform_wrapper: false
-                cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}. # This is optional if you are not using Terraform Cloud or Enterprise
+                # cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }} # This is optional if you are not using Terraform Cloud or Enterprise
 
             - name: Initialize Terraform
               id: init
@@ -36,7 +38,7 @@ jobs:
                 -var "public_key=$AWS_SSH_KEY_PUBLIC" \
                 -var "private_key=$AWS_SSH_KEY_PRIVATE" \
                 -out=PLAN
-                working-directory: ./Terraform
+              working-directory: ./Terraform
             
             - name: Apply Terraform configuration
               id: apply

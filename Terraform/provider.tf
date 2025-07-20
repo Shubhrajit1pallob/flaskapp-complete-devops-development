@@ -14,7 +14,7 @@ terraform {
     key    = "aws/flaskapp-ec2-deploy/portfolio-terraform.tfstate"
     region = "us-east-1"
   }
-  required_version = "~>1.7"
+  required_version = "~> 1.7"
 }
 
 provider "aws" {
