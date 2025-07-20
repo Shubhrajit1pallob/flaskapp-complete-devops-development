@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <link rel="stylesheet" href="../static/css/mediaqueries.css" />
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Web Development Projects</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about" onclick="location.href='/'">Home</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Web Development Projects</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="location.href='/'">Home</a></li>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="project-card">
+        <div class="project-info">
+            <h3>Travel Tracker</h3>
+            <p>TTravel Tracker is a web application that allows users to track the countries they have visited. Users can add new
+            countries to their visited list, and the application will display the total number of countries visited.</p>
+            <img src="../static/assets/github.png" rel="noopener" alt="My Github profile" class="icon project_icon"
+                onclick="location.href='https://github.com/Shubhrajit1pallob/Travle-Tracker-NPM'" />
+        </div>
+        <div class="project-image">
+            <img src="../static/assets/US-Sticker-Map.webp" alt="Project Screenshot" />
+        </div>
+    </div>
+    <div class="project-card">
+        <div class="project-info">
+            <h3>World Capital Quiz</h3>
+            <p>This is a simple web application that quizzes users on the capital cities of various countries. The application uses
+            Node.js, Express, and PostgreSQL.</p>
+            <img src="../static/assets/github.png" rel="noopener" alt="My Github profile" class="icon project_icon"
+                onclick="location.href='https://github.com/Shubhrajit1pallob/World-capital-quiz'" />
+        </div>
+        <div class="project-image">
+            <img src="../static/assets/world_capitals.jpg" alt="Project Screenshot" />
+        </div>
+    </div>
+    
+
+    <footer>
+        <p>Copyright &#169; 2023 Shubhrajit Pallob. All Rights Reserved.</p>
+    </footer>
+
+    <script src="../static/js/script.js"></script>
+</body>

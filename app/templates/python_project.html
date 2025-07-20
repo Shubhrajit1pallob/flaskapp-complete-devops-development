@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <link rel="stylesheet" href="../static/css/mediaqueries.css" />
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Python projects</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about" onclick="location.href='/'">Home</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Python projects</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="location.href='/'">Home</a></li>
+                
+            </div>
+        </div>
+    </nav>
+
+    <div class="project-card">
+        <div class="project-info">
+            <h3>Spydr Programming Language</h3>
+            <p>Spyder is a imperative programming language designed for starting/newbie programmers. It used basic lexer and parser to impleament a simple programming language.</p>
+            <img src="../static/assets/github.png" rel="noopener" alt="My Github profile" class="icon project_icon"
+                onclick="location.href='https://github.com/Shubhrajit1pallob/SER502-Spydr-Team6'" />
+        </div>
+        <div class="project-image">
+            <img src="../static/assets/pexels-markusspiske-965345.jpg" alt="Project Screenshot" />
+        </div>
+    </div>
+    <div class="project-card">
+        <div class="project-info">
+            <h3>RSA Decryptor</h3>
+            <p>RSA Decrypter is a web application that allows users to decrypt messages encrypted using the RSA algorithm.
+                The
+                application is built using Flask and provides a simple interface for users to input their encrypted message,
+                public key,
+                and modulus value to obtain the decrypted message.</p>
+            <img src="../static/assets/github.png" rel="noopener" alt="My Github profile" class="icon project_icon"
+                onclick="location.href='https://github.com/Shubhrajit1pallob/RSA-Decryptor'" />
+        </div>
+        <div class="project-image">
+            <img src="../static/assets/decryptors.jpeg" alt="Project Screenshot" />
+        </div>
+    </div>
+
+    <div class="project-card">
+        <div class="project-info">
+            <h3>Password Manager</h3>
+            <p>A simple and secure password manager built with Python and Tkinter. This app allows you to generate strong passwords,
+            save them along with website and email/username details, and search for saved credentials easily.</p>
+            <img src="../static/assets/github.png" rel="noopener" alt="My Github profile" class="icon project_icon"
+                onclick="location.href='https://github.com/Shubhrajit1pallob/Pyhon-Password-Manager'" />
+        </div>
+        <div class="project-image">
+            <img src="../static/assets/Password-manager-1-768x648.png" alt="Project Screenshot" />
+        </div>
+    </div>
+    <div class="project-card">
+        <div class="project-info">
+            <h3>Password Generator</h3>
+            <p>This project is a password generator built using Python. It allows users to create secure passwords with customizable options such as length and complexity.</p>
+            <img src="../static/assets/github.png" rel="noopener" alt="My Github profile" class="icon project_icon"
+                onclick="location.href='https://github.com/Shubhrajit1pallob/Python-Password-Generator'" />
+        </div>
+        <div class="project-image">
+            <img src="../static/assets/Strong Password Generator.jpg" alt="Project Screenshot" />
+        </div>
+    </div>
+    <div class="project-card">
+        <div class="project-info">
+            <h3>Pong Game</h3>
+            <p>This project recreates the classic Pong Game using Python's turtle module. Two players control paddles to bounce the ball and score points when the opponent misses.</p>
+            <img src="../static/assets/github.png" rel="noopener" alt="My Github profile" class="icon project_icon"
+                onclick="location.href='https://github.com/Shubhrajit1pallob/Python-Pong-Game'" />
+        </div>
+        <div class="project-image">
+            <img src="../static/assets/pong-arcade-game-atari.jpg" alt="Project Screenshot" />
+        </div>
+    </div>
+    <div class="project-card">
+        <div class="project-info">
+            <h3>Snakes Game</h3>
+            <p>This project is a classic Snake Game built using Python's turtle module. The player controls the snake to collect food,
+            growing in size with each item consumed, while avoiding collisions with the walls or itself.</p>
+            <img src="../static/assets/github.png" rel="noopener" alt="My Github profile" class="icon project_icon"
+                onclick="location.href='https://github.com/Shubhrajit1pallob/Python-Snake-Game'" />
+        </div>
+        <div class="project-image">
+            <img src="../static/assets/AdobeStock_568431724.jpeg" alt="Project Screenshot" />
+        </div>
+    </div>
+    <div class="project-card">
+        <div class="project-info">
+            <h3>Turtle Crossing Game</h3>
+            <p>This project is a Python-based game built using the `turtle` module. This project teaches how to build interactive GUI applications using Tkinter, implement dynamic logic for quizzes with Python, and manage user feedback and score tracking in real-time. It also reinforces modular programming and event-driven design principles.</p>
+            <img src="../static/assets/github.png" rel="noopener" alt="My Github profile" class="icon project_icon"
+                onclick="location.href='https://github.com/Shubhrajit1pallob/Python-Turtle-crossing'" />
+        </div>
+        <div class="project-image">
+            <img src="../static/assets/AdobeStock_1142540911.jpeg" alt="Project Screenshot" />
+        </div>
+    </div>
+    <div class="project-card">
+        <div class="project-info">
+            <h3>Quiz Game</h3>
+            <p>Quizler is a fun and interactive quiz application built using Python and the Tkinter library. It presents users with multiple-choice questions and keeps track of their score as they progress through the quiz.</p>
+            <img src="../static/assets/github.png" rel="noopener" alt="My Github profile" class="icon project_icon"
+                onclick="location.href='https://github.com/Shubhrajit1pallob/Python-Quizler'" />
+        </div>
+        <div class="project-image">
+            <img src="../static/assets/istockphoto-1336313511-612x612.jpg" alt="Project Screenshot" />
+        </div>
+    </div>
+    <div class="project-card">
+        <div class="project-info">
+            <h3>OOP Coffee Machine</h3>
+            <p>This project is a coffee machine simulator that demonstrates object-oriented programming principles.</p>
+            <p>It is a great example of how to use classes and objects in Python to create a functional application.</p>
+            <p>Technologies used: Python, OOP principles</p>
+            <img src="../static/assets/github.png" rel="noopener" alt="My Github profile" class="icon project_icon"
+                onclick="location.href='https://github.com/Shubhrajit1pallob/OOP-Coffee-Machine'" />
+        </div>
+        <div class="project-image">
+            <img src="../static/assets/AdobeStock_343385020_Preview.jpeg" alt="Project Screenshot" />
+        </div>
+    </div>
+
+    <footer>
+        <p>Copyright &#169; 2023 Shubhrajit Pallob. All Rights Reserved.</p>
+    </footer>
+
+    <script src="../static/js/script.js"></script>
+</body>

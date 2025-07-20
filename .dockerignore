@@ -1,0 +1,6 @@
+app/static/assets/
+Terraform/
+.git/
+*.md
+__pycache__/
+*.pyc

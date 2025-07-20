@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <link rel="stylesheet" href="../static/css/mediaqueries.css" />
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Cybersecurity Projects</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about" onclick="location.href='/'">Home</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Cybersecurity Projects</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="location.href='/'">Home</a></li>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="project-card">
+        <div class="project-info">
+            <h3>Phishing Domain Detection System</h3>
+            <p>This project is designed to detect and analyze phishing attempts through email and URLs. The application leverages Flask for the web framework and integrates with AlienVault OTX to fetch known phishing domains. It also includes various validation and analysis techniques to identify suspicious emails and URLs.</p>
+            <img src="../static/assets/github.png" rel="noopener" alt="My Github profile" class="icon project_icon"
+                onclick="location.href='https://github.com/Shubhrajit1pallob/Phishing_Web_app'" />
+        </div>
+        <div class="project-image">
+            <img src="../static/assets/phishing-attack.webp" alt="Project Screenshot" />
+        </div>
+    </div>
+    <div class="project-card">
+        <div class="project-info">
+            <h3>Intrusion Detection System using AI & ML</h3>
+            <p>his project implements an Intrusion Detection System (IDS) using a combination of Machine Learning (ML), Deep Learning (DL), and Reinforcement Learning (RL) techniques. The goal is to accurately detect and classify network intrusions using advanced AI models.</p>
+            <img src="../static/assets/github.png" rel="noopener" alt="My Github profile" class="icon project_icon"
+                onclick="location.href='https://github.com/Shubhrajit1pallob/IDS-AI-ML'" />
+        </div>
+        <div class="project-image">
+            <img src="../static/assets/IDS.jpeg" alt="Project Screenshot" />
+        </div>
+    </div>
+
+    <div class="project-card">
+        <div class="project-info">
+            <h3>SOC Home Lab</h3>
+            <p>This project is designed to create a Security Operations Center (SOC) home lab environment for learning and experimentation. It includes setting up various security tools and technologies to monitor, detect, and respond to security incidents.</p>
+            <!-- <img src="../static/assets/github.png" rel="noopener" alt="My Github profile" class="icon project_icon"
+                onclick="location.href='https://github.com/Shubhrajit1pallob/SOC-Home-Lab'" /> -->
+            <button class="btn btn-color-2 project-btn project_icon" disabled style="margin-top: 10px; cursor: not-allowed;">
+                Currently Working On It
+            </button>
+        </div>
+        <div class="project-image">
+            <img src="../static/assets/SOC home lab.gif" alt="Project Screenshot" />
+        </div>
+    </div>
+
+    <footer>
+        <p>Copyright &#169; 2023 Shubhrajit Pallob. All Rights Reserved.</p>
+    </footer>
+
+    <script src="../static/js/script.js"></script>
+</body>
