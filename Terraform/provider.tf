@@ -11,7 +11,7 @@ terraform {
   }
   backend "s3" {
     bucket = "full-scale-app-automation-cicd"
-    key    = "aws/ec2-deploy/portfolio-terraform.tfstate"
+    key    = "aws/flaskapp-ec2-deploy/portfolio-terraform.tfstate"
     region = "us-east-1"
   }
   required_version = "~>1.7"
